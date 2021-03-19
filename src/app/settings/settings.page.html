@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon style="margin-left: 10px;" class="arrow" name="arrow-back" slot="start" (click)="goBack()"></ion-icon>
+    <ion-item lines="none" class="toolbar-item">
+      <ion-label>
+        Settings
+      </ion-label>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-list>
+      <ion-item lines="none">
+        <ion-label style="text-align: center;">Country/Region</ion-label>
+        <ion-input type="text" value="India" style="text-align: end;color: grey;">
+        </ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label style="text-align: center;">Language</ion-label>
+        <ion-input type="text" value="English" style="text-align: end;color: grey;">
+        </ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label style="text-align: center;">Currency</ion-label>
+        <ion-input type="text" value="Indian Rupee (₹)" style="text-align: end;color: grey;">
+        </ion-input>
+      </ion-item>
+      </ion-list>
+  </form>
+</ion-content>

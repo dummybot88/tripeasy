@@ -1,0 +1,34 @@
+ion-tab-button.active {
+	color:#aa4b6b;
+	background-color: white;
+	ion-icon,ion-label{
+		color: #aa4b6b;
+	}
+	ion-label{
+		border-bottom: 2px solid #aa4b6b
+	}
+}
+
+ion-tab-button:hover{
+    color:#aa4b6b;
+	background-color: white;
+	ion-icon,ion-label{
+		color: #aa4b6b;
+	}
+}
+
+ion-tab-button.active:hover{
+	color: #aa4b6b;
+	ion-icon,ion-label{
+		color: #aa4b6b;
+	}
+	
+}
+
+ion-icon, ion-label{
+	color: #aa4b6b;
+}
+
+ion-icon{
+	font-size: 30px
+}

@@ -1,0 +1,31 @@
+<ion-split-pane contentId="main">
+  <!--  the side menu  -->
+  <ion-menu contentId="main" side="start" type="overlay" style="--width:200px">
+    <ion-toolbar>
+      <ion-list>
+        <ion-thumbnail style="margin: auto;">
+          <img src="assets/icon/boy.png">
+        </ion-thumbnail>
+        <ion-item lines="none">
+          <ion-label style="text-align: center;">
+            <span class="header-title">Traveller</span>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+    </ion-toolbar>
+    <ion-content fullscreen>
+      <ion-list lines="none">
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of pages; let i = index">
+          <ion-item routerLinkActive="active" routerDirection="root" [routerLink]="p.url"
+            [class.active-item]="selectedPath.startsWith(p.url)">
+            <ion-icon slot="start" [name]="p.src"></ion-icon>
+            <ion-label>{{ p.title }}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!-- the main content -->
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-split-pane>
